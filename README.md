@@ -28,3 +28,14 @@ Examples: make, cmake, premake, ninja, nmake
 ### What is a package manager in C++? Name 3 package managers:
 A package manager automates the installation of third party libraries and optionally handles the interaction with the build system.
 Examples: conan, vcpkg, hunter
+
+## Exercise 3 - Questions
+### What is the difference between a dynamic linked library and a static library?
+Static libraries are loaded to the program at compile time, i.e., the resulting executable contains its own copy of the library code. Dynamic libraries are usually shared by multiple programs and loaded at runtime.
+### Describe a logging system with your own words:
+A logging system serves the purpose of providing the developer with a simplified way to output all kinds of information in the output console in a standardized way. The logged messages can be categorized as warnings, information, etc. and are used for troubleshooting and monitoring of the application.
+### What is a Design Pattern?
+A reusable solution to a common occuring problem.
+### Name and describe 2 Design Patterns (except façade or adapter):
+- State: Behavioural design pattern which allows for objects to have multiple states and change their behaviour according to the state they are in.
+- Memento: Design pattern that enables the storage and later restoring of the internal state of an object.

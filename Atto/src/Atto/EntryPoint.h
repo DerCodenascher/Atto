@@ -4,8 +4,7 @@
 
 extern Atto::Application* Atto::CreateApplication();
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv) {
 	Atto::Log::Init();
 	ATTO_CORE_WARN("Initialized Log!");
 	int a = 5;

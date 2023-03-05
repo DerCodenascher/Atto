@@ -1,20 +1,11 @@
 #include <Atto.h>
 
-class Sandbox : public Atto::Application
-{
+class Sandbox : public Atto::Application {
 public:
-	Sandbox()
-	{
-
-	}
-
-	~Sandbox()
-	{
-
-	}
+	Sandbox() {}
+	~Sandbox() {}
 };
 
-Atto::Application* Atto::CreateApplication()
-{
+Atto::Application* Atto::CreateApplication() {
 	return new Sandbox();
 }

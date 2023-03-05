@@ -4,6 +4,9 @@
     <Filter Include="Atto">
       <UniqueIdentifier>{FDB0827C-E9E7-830D-92D4-69107EEAFF0E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Atto\Events">
+      <UniqueIdentifier>{41BE21A1-AD73-9A96-3668-946DA21C919A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Atto.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Atto\EntryPoint.h">
       <Filter>Atto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atto\Events\ApplicationEvent.h">
+      <Filter>Atto\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atto\Events\Event.h">
+      <Filter>Atto\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atto\Events\KeyEvent.h">
+      <Filter>Atto\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atto\Events\MouseEvent.h">
+      <Filter>Atto\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Atto\Log.h">
       <Filter>Atto</Filter>

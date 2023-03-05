@@ -1,13 +1,12 @@
 #pragma once
 
 #include "Core.h"
+#include "Events/Event.h"
 
-namespace Atto 
-{
+namespace Atto {
 
-	class ATTO_API Application
-	{
-	public: 
+	class ATTO_API Application {
+	public:
 		Application();
 		virtual ~Application();
 
