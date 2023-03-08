@@ -32,8 +32,8 @@ Examples: conan, vcpkg, hunter
 ## Exercise 3 - Questions
 ### What is the difference between a dynamic linked library and a static library?
 Static libraries are loaded to the program at compile time, i.e., the resulting executable contains its own copy of the library code. Dynamic libraries are usually shared by multiple programs and loaded at runtime.
-### Describe a logging system with your own words:
-A logging system serves the purpose of providing the developer with a simplified way to output all kinds of information in the output console in a standardized way. The logged messages can be categorized as warnings, information, etc. and are used for troubleshooting and monitoring of the application.
+### Describe a event system with your own words:
+An event system provides the developer with a uniform way to handle (capture, enqueue, process) emerging events such as mouse/key input, window resizing, etc. within a game engine.
 ### What is a Design Pattern?
 A reusable solution to a common occuring problem.
 ### Name and describe 2 Design Patterns (except façade or adapter):
