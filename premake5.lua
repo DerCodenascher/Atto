@@ -19,6 +19,9 @@ project "Atto"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "attopch.h"
+    pchsource "Atto/src/attopch.cpp"
+
     files 
     {
         "%{prj.name}/src/**.h",

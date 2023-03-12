@@ -2,10 +2,6 @@
 
 #include "Atto/Core.h"
 
-#include <string>
-#include <functional>
-#include <sstream>
-
 namespace Atto {
 
 	// Events are blocking

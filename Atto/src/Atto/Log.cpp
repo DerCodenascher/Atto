@@ -1,3 +1,4 @@
+#include "attopch.h"
 #include "Log.h"
 
 namespace Atto {
