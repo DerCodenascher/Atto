@@ -1,5 +1,6 @@
 #pragma once
 
+#include "attopch.h"
 #include "Atto/Core.h"
 
 namespace Atto {

@@ -11,10 +11,17 @@ workspace "Atto"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- inlcude dirs relatie to root folder (solution dir)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Atto/vendor/GLFW/include"
+
+include "Atto/vendor/GLFW"
+
 project "Atto"
     location "Atto"
     kind "SharedLib"
     language "C++"
+    staticruntime "off"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -31,12 +38,19 @@ project "Atto"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+    
+    links 
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
+        runtime "Debug"
         systemversion "latest"
 
         defines
@@ -53,20 +67,24 @@ project "Atto"
     filter "configurations:Debug"
         defines "ATTO_DEBUG"
         symbols "On"
+        runtime "Debug"
 
     filter "configurations:Release"
         defines "ATTO_RELEASE"
-        symbols "On"
+        optimize "On"
+        runtime "Release"
 
     filter "configurations:Dist"
         defines "ATTO_DIST"
-        symbols "On"
+        optimize "On"
+        runtime "Release"
 
 project "Sandbox"
     location "Sandbox"
     kind "ConsoleApp"
-
     language "C++"
+    staticruntime "off"
+
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
@@ -89,7 +107,7 @@ project "Sandbox"
 
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
+        runtime "Debug"
         systemversion "latest"
 
         defines
@@ -100,11 +118,14 @@ project "Sandbox"
     filter "configurations:Debug"
         defines "ATTO_DEBUG"
         symbols "On"
+        runtime "Debug"
 
     filter "configurations:Release"
         defines "ATTO_RELEASE"
-        symbols "On"
+        optimize "On"
+        runtime "Release"
 
     filter "configurations:Dist"
         defines "ATTO_DIST"
-        symbols "On"
+        optimize "On"
+        runtime "Release"

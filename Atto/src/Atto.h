@@ -2,7 +2,6 @@
 
 // For use by Atto application
 
-#include <stdio.h>
 #include "Atto/Application.h"
 #include "Atto/Log.h"
 
