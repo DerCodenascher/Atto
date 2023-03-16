@@ -46,8 +46,8 @@ In a precompiled header usually commonly used header files are grouped together 
 ### Describe the layer of abstraction with your own words:
 The abstraction layer (Window.h) allows us to program the rest of our application without worrying about the details of the concrete implementation of the window class. In Window.h we can make the decision about which concrete class (for which platform) we will use, which in turn is responsible for the concrete implementation of the window functionality.
 ### Name the SOLID principles and describe them briefly:
-- The _S_ingle-responsibility principle: Every class should have only one responsibility.
-- The _O_pen–closed principle: Software entities should be open for extension, but closed for modification.
-- The _L_iskov substitution principle: An object of a derived class must be able to be used as an object of the base class without breaking the program.
-- The _I_nterface segregation principle: Clients should not be forced to depend upon interfaces that they do not use.
-- The _D_ependency inversion principle: Depend upon abstractions (interfaces), not concretions.
+- The __S__ ingle-responsibility principle: Every class should have only one responsibility.
+- The __O__ pen–closed principle: Software entities should be open for extension, but closed for modification.
+- The __L__ iskov substitution principle: An object of a derived class must be able to be used as an object of the base class without breaking the program.
+- The __I__ nterface segregation principle: Clients should not be forced to depend upon interfaces that they do not use.
+- The __D__ ependency inversion principle: Depend upon abstractions (interfaces), not concretions.
