@@ -1,6 +1,6 @@
 [submodule "Atto/vendor/spdlog"]
 	path = Atto/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
-[submodule "Atto\\vendor\\GLFW"]
-	path = Atto\\vendor\\GLFW
+[submodule "Atto/vendor/GLFW"]
+	path = Atto/vendor/GLFW
 	url = git@github.com:TheCherno/glfw.git
