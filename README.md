@@ -39,3 +39,15 @@ A reusable solution to a common occuring problem.
 ### Name and describe 2 Design Patterns (except façade or adapter):
 - State: Behavioural design pattern which allows for objects to have multiple states and change their behaviour according to the state they are in.
 - Memento: Design pattern that enables the storage and later restoring of the internal state of an object.
+
+## Exercise 4 - Questions
+### What is a precompiled header? Name pros and cons:
+In a precompiled header usually commonly used header files are grouped together and precompiled into a binary format. The advantage is faster compilation time and fewer include statements in the source code. Disadvantages are that PCHs can easily become bloated, the entire PCH must be recompiled when a change occurs in an included header file, additional maintenance overhead, and that the compiler must support precompiled headers.
+### Describe the layer of abstraction with your own words:
+The abstraction layer (Window.h) allows us to program the rest of our application without worrying about the details of the concrete implementation of the window class. In Window.h we can make the decision about which concrete class (for which platform) we will use, which in turn is responsible for the concrete implementation of the window functionality.
+### Name the SOLID principles and describe them briefly:
+- The _S_ingle-responsibility principle: Every class should have only one responsibility.
+- The _O_pen–closed principle: Software entities should be open for extension, but closed for modification.
+- The _L_iskov substitution principle: An object of a derived class must be able to be used as an object of the base class without breaking the program.
+- The _I_nterface segregation principle: Clients should not be forced to depend upon interfaces that they do not use.
+- The _D_ependency inversion principle: Depend upon abstractions (interfaces), not concretions.
